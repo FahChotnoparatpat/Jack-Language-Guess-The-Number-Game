@@ -1,0 +1,46 @@
+class Game {
+    field int lowerBound;
+    field int upperBound;
+    field int guess;
+    field boolean guessedCorrectly;
+    field Bar bar;
+
+    constructor Game new() {
+        let lowerBound = 1;
+        let upperBound = 100;
+        let guessedCorrectly = false;
+        
+        return this;
+    }
+
+    function void play() {
+        // Initialize variables for a new game 
+        var Bar bar;
+        let bar = Bar.new();
+        var int response;
+        
+        
+        // Start the game loop
+        while (~guessedCorrectly) {
+            let guess = ((lowerBound + upperBound) / 2);
+            
+            do bar.updateBar();
+
+            do Screen.println("Is it " + guess + "? (yes = 0, higher = 1, lower = 2)");
+            let response = Keyboard.readInt();
+            
+            if (response = 1) {
+                lowerBound = guess + 1;
+            }
+            else if (response = 2) {
+                upperBound = guess - 1;
+            }
+            else if (response = 0) {
+                guessedCorrectly = true;
+                do Screen.println("I guessed your number!");
+            }
+        }
+        return; 
+    }
+    // End of the game
+}

@@ -1,0 +1,37 @@
+// This program plays a game of "guess the number"
+// The player choose a number between 1 and 100
+// The program will tell the player its guess and the player will tell if the guess is too high, too low or correct
+
+class Main {
+    function void main() {
+        var Game game;
+        var Player player;
+        var int response;
+        var boolean playAgain;
+        
+        let playAgain = true;
+
+        while (playAgain) {
+            // Initialize game and player objects
+            let game = Game.new();
+            let player = Player.new();
+
+            do player.chooseNumber();
+            do game.play();
+
+            do Screen.println("Do you want to play again? (yes = 1, no = 0)");
+            let response = Keyboard.readInt();
+            
+            if (response = 1) {
+                let playAgain = true;
+            }
+            else {
+                let playAgain = false;
+            }
+
+        }
+            
+        // End of the program
+        return;
+    }
+}

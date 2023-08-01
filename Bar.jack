@@ -1,0 +1,33 @@
+class Bar {
+    field int barWidth;
+    field int guessPos;
+    field int lowerPos;
+    field int upperPos;
+    
+    method void updateBar() {
+        var Game game;
+        var int barWidth;
+        var int guessPos;
+        var int lowerPos;
+        var int upperPos;
+
+        // Set the width of the bar based on the screen width
+        let barWidth = (screen.getWidth() - 2);
+
+        // Calculate the position of the guess, lower bound, and upper bound
+        let guessPos = ((game.guess - game.lowerBound) * barWidth) / (game.upperBound - game.lowerBound);
+        let lowerPos = ((0 - game.lowerBound) * barWidth) / (game.upperBound - game.lowerBound);
+        let upperPos = ((game.upperBound - game.lowerBound) * barWidth) / (game.upperBound - game.lowerBound);
+
+        // Draw the bar
+        do screen.drawHorizontalLine(0, barWidth + 1, 0);
+        do screen.drawHorizontalLine(0, barWidth + 1, screen.getHeight() - 1);
+
+        // Draw the sections
+        do screen.drawVerticalLine(guessPos, 0, screen.getHeight(), "green");
+        do screen.drawVerticalLine(lowerPos, 0, screen.getHeight(), "red");
+        do screen.drawVerticalLine(upperPos, 0, screen.getHeight(), "red");
+        
+        return;
+    }
+}
