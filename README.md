@@ -6,19 +6,19 @@ This project implements an interactive "Guess the Number" game using the Jack pr
 
 To run the game, follow these steps:
 
-1. Download and Install a Jack Compiler: First, ensure you have a Jack compiler installed on your system. You can use any Jack compiler compatible with your operating system.
+1. **Download and Install a Jack Compiler** 
 
-2. Compile the Code: Compile all the .jack files in the project using your Jack compiler. This will generate corresponding .vm files.
+2. **Compile the Code**: Compile all the .jack files in the project using your Jack compiler. This will generate corresponding .vm files.
 
-3. Deploy the VM Files: Deploy the generated .vm files on a virtual machine or an emulator compatible with the Jack virtual machine architecture.
+3.**Deploy the VM Files**: Deploy the generated .vm files on a virtual machine or an emulator compatible with the Jack virtual machine architecture.
 
-4. Run the Virtual Machine: Start the virtual machine or emulator, and load the deployed .vm files onto it.
+4. **Run the Virtual Machine**: Start the virtual machine or emulator, and load the deployed .vm files onto it.
 
-5. Start the Game: Once the virtual machine is running, execute the Main.vm file to start the game.
+5. S**tart the Game**: Once the virtual machine is running, execute the Main.vm file to start the game.
 
-6. Follow On-Screen Instructions: The game will prompt you to think of a number between 1 and 100, and then guide you through the guessing process. Follow the on-screen instructions to provide feedback on each guess until the game correctly guesses your number.
+6. **Follow On-Screen Instructions**: The game will prompt you to think of a number between 1 and 100, and then guide you through the guessing process. Follow the on-screen instructions to provide feedback on each guess until the game correctly guesses your number.
 
-7. Play Again (Optional): After completing a game, you will have the option to play again. Follow the prompts to either start a new game or exit the program.
+7. **Play Again** (Optional): After completing a game, you will have the option to play again. Follow the prompts to either start a new game or exit the program.
 
 **Project Structure**
 
