@@ -10,7 +10,7 @@ To run the game, follow these steps:
 
 2. **Compile the Code**: Compile all the .jack files in the project using your Jack compiler. This will generate corresponding .vm files.
 
-3.**Deploy the VM Files**: Deploy the generated .vm files on a virtual machine or an emulator compatible with the Jack virtual machine architecture.
+3.  **Deploy the VM Files**: Deploy the generated .vm files on a virtual machine or an emulator compatible with the Jack virtual machine architecture.
 
 4. **Run the Virtual Machine**: Start the virtual machine or emulator, and load the deployed .vm files onto it.
 
