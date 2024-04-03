@@ -1,7 +1,9 @@
 **Overview**
+
 This project implements an interactive "Guess the Number" game using the Jack programming language. The game involves the player choosing a number between 1 and 100, and the program attempts to guess that number through a series of iterations based on the player's responses. The game provides a visual representation of the guessing process through a graphical interface.
 
 **Installation and Deployment**
+
 To run the game, follow these steps:
 
 1. Download and Install a Jack Compiler: First, ensure you have a Jack compiler installed on your system. You can use any Jack compiler compatible with your operating system.
@@ -19,11 +21,14 @@ To run the game, follow these steps:
 7. Play Again (Optional): After completing a game, you will have the option to play again. Follow the prompts to either start a new game or exit the program.
 
 **Project Structure**
-Bar.jack: Defines the Bar class responsible for visualizing the guessing bar.
-Game.jack: Implements the Game class that manages the game logic and controls the interaction between the player and the guessing algorithm.
-Main.jack: Contains the Main class, which serves as the entry point for the game and orchestrates the initialization and execution of the game.
-Player.jack: Defines the Player class, which handles interactions with the player, such as prompting them to choose a number.
-README.md: This file, providing an overview of the project and instructions for deployment.
+
+**Bar.jack:** Defines the Bar class responsible for visualizing the guessing bar.
+
+**Game.jack:** Implements the Game class that manages the game logic and controls the interaction between the player and the guessing algorithm.
+
+**Main.jack:** Contains the Main class, which serves as the entry point for the game and orchestrates the initialization and execution of the game.
+
+**Player.jack:** Defines the Player class, which handles interactions with the player, such as prompting them to choose a number.
 
 
-Enjoy playing "Guess the Number"!
+**Enjoy playing "Guess the Number"!**
